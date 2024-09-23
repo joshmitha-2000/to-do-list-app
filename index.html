@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List App</title>
+	<style>
+        .list-app {
+  text-align: center;
+  margin-top: 50px;
+        }
+input :hover{
+   border-color: blue;
+}
+
+#list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#list li {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+
+}
+
+#list li button {
+  margin-left: 10px;
+}
+.remove{
+    background-color: red;
+}
+
+.completed {
+  text-decoration: line-through;
+  background-color: rgb(152, 4, 4);
+ 
+}
+#add-item{
+    background-color:green;
+    color: white;
+    border:none;
+}
+    </style>
+</head>
+
+<body>
+	<div class="list-app">
+		<h2>TO-DO-LIST APP</h2>
+		<input type="text" id="item" placeholder="Add new item">
+		<button id="add-item">Add Item</button>
+		<ul id="list">
+			<!-- List items will be added here -->
+		</ul>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
